@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 创建流程引擎配置对象 -->
+    <bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">
+        <property name="jdbcDriver" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://192.168.1.166:3306/activity?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8" />
+        <property name="jdbcUsername" value="root" />
+        <property name="jdbcPassword" value="developer@lydsj" />
+        <property name="databaseSchemaUpdate" value="true" />
+    </bean>
+
+</beans>

@@ -51,8 +51,10 @@ public class ProcessDefinitionTest {
      */
     @Test
     public void deployProcessEngineer_zip() {
+        //第一种资源加载方式：通过类的加载器，路径前没有 /
+        InputStream in = this.getClass().getClassLoader().getResourceAsStream("activiti/helloword.zip");
         //与流程部署定义相关的service
-        ZipInputStream zin = new ZipInputStream(this.getClass().getClassLoader().getResourceAsStream("activiti/helloword.zip"));
+        ZipInputStream zin = new ZipInputStream(in);
         Deployment deploy = engine.getRepositoryService()
                 //创建一个部署对象
                 .createDeployment()
@@ -110,7 +112,7 @@ public class ProcessDefinitionTest {
     @Test
     public void deleteProcessDefine() {
 
-        String deploymentId = "10001";
+        String deploymentId = "45001";
         engine.getRepositoryService()
                 // 只能删除未启动的流程定义，如果启动就会报异常，不带级联删除。
                 //.deleteDeployment(deploymentId);

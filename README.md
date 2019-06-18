@@ -6,10 +6,14 @@
 2. [201９最全Activiti６.０框架自动创建表的３种方式](https://blog.csdn.net/x15011238662/article/details/86503913)
 
 ## 实战
+### 基本的CRUD (主要是针对sql/table.sql中的表操作)
 1. 表上的创建：com.activity.app.test.HelloWord
-3. 流程流程：com.activity.app.demo01.ProcessDeployTest
-4. 流程定义：com.activity.app.demo01.ProcessDefinitionTest
-5. 流程实例对象：com.activity.app.demo01.ProcessInstanceTest
+2. 流程部署：com.activity.app.demo01.ProcessDeployTest
+3. 流程定义：com.activity.app.demo01.ProcessDefinitionTest
+4. 流程实例：com.activity.app.demo01.ProcessInstanceTest
+5. 流程实例：com.activity.app.demo01.ProcessVariableTest
+6. 流程实例：com.activity.app.demo01.HistoryQueryTest
+
 ## 问题
 
 1. 连接Mysql编码问题

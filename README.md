@@ -8,11 +8,24 @@
 ## 实战
 ### 基本的CRUD (主要是针对sql/table.sql中的表操作)
 1. 表上的创建：com.activity.app.test.HelloWord
-2. 流程部署：com.activity.app.demo01.ProcessDeployTest
-3. 流程定义：com.activity.app.demo01.ProcessDefinitionTest
-4. 流程实例：com.activity.app.demo01.ProcessInstanceTest
-5. 流程实例：com.activity.app.demo01.ProcessVariableTest
-6. 流程实例：com.activity.app.demo01.HistoryQueryTest
+2. 流程部署：com.activity.app.crud.ProcessDeployTest
+3. 流程定义：com.activity.app.crud.ProcessDefinitionTest
+4. 流程实例：com.activity.app.crud.ProcessInstanceTest
+5. 流程实例：com.activity.app.crud.ProcessVariableTest
+6. 流程实例：com.activity.app.crud.HistoryQueryTest
+
+### 提高
+
+1. 连线：com.activity.app.connectline.SequenceFlowTest
+2. 排他网关：com.activity.app.connectline.ExclusiveGateWayTest
+3. 并行网关：com.activity.app.connectline.ParallelGateWayTest
+4. 开始流程节点：com.activity.app.connectline.StartProcessTest
+5. 接受任务测试：com.activity.app.connectline.ReceiveTaskTest
+6. 个人任务测试（第一、二种方式）：com.activity.app.connectline.UserTaskTest
+7. 个人任务测试（第三种方式，查数据库）：com.activity.app.connectline.UserTask1Test
+8. 组+角色+拾取的管理：com.activity.app.connectline.GroupRoleTest
+9. 组任务+拾取：com.activity.app.connectline.GroupTaskTest
+
 
 ## 问题
 

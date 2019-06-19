@@ -1,4 +1,4 @@
-package com.activity.app.demo01;
+package com.activity.app.crud;
 
 import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.ProcessEngines;
@@ -6,13 +6,10 @@ import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.apache.commons.io.FileUtils;
 import org.junit.Test;
-import org.springframework.util.FileCopyUtils;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URI;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -112,7 +109,7 @@ public class ProcessDefinitionTest {
     @Test
     public void deleteProcessDefine() {
 
-        String deploymentId = "45001";
+        String deploymentId = "75001";
         engine.getRepositoryService()
                 // 只能删除未启动的流程定义，如果启动就会报异常，不带级联删除。
                 //.deleteDeployment(deploymentId);

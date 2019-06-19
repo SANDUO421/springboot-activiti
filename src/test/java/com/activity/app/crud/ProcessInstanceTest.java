@@ -1,4 +1,4 @@
-package com.activity.app.demo01;
+package com.activity.app.crud;
 
 import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.ProcessEngines;

@@ -1,4 +1,4 @@
-package com.activity.app.demo01;
+package com.activity.app.crud;
 
 import com.activity.app.entity.Person;
 import org.activiti.engine.ProcessEngine;
@@ -8,18 +8,14 @@ import org.activiti.engine.TaskService;
 import org.activiti.engine.history.HistoricVariableInstance;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.runtime.ProcessInstance;
-import org.activiti.engine.task.Task;
 import org.junit.Test;
 
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 /**
  * 流程变量测试

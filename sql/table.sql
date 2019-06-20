@@ -4,7 +4,7 @@
 select  * from  act_re_deployment
 #流程定义表
 select * from act_re_procdef
-#资源文件表
+# 资源文件表
 select * from act_ge_bytearray
 #文件生成表
 select * from act_ge_property
@@ -28,9 +28,34 @@ select * from act_hi_taskinst
 select * from act_hi_actinst
 
 
---流程变量
+-- 流程变量
 
 #正在执行的流程变量表
 select * from act_ru_variable
 #历史的流程变量表
 select * from act_hi_varinst
+
+-- 组任务(候选者和参与者)
+
+#任务表（个人任务、组任务）
+select * from act_ru_identitylink
+
+#历史任务办理人表（个人任务、组任务）
+select * from act_hi_identitylink
+
+
+-- 机构管理
+
+# 角色表
+select * from act_id_group
+
+#用户表
+select * from act_id_user
+
+#角色关联表
+select * from act_id_membership
+# 详情
+select * from act_id_info
+
+-- 审批记录表(批注)
+select * from act_hi_comment
